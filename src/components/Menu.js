@@ -23,6 +23,12 @@ function Menu(props) {
       </StyledLink>
 
       <StyledLink animated>
+        <Link style={LinkStyles} to="/FAQ">
+          FAQ
+        </Link>
+      </StyledLink>
+
+      <StyledLink animated>
         <Link style={LinkStyles} to="/contact">
           Contact Me
         </Link>

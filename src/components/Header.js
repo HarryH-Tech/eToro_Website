@@ -1,11 +1,14 @@
 import React from "react";
 import { StyledHeader } from "../assets/StyledComponents/Header";
 
-function Header(props) {
+function Header() {
   return (
     <div>
       <StyledHeader>
-        <i style={{ margin: "0.5rem" }} class="fas fa-search-dollar fa-lg"></i>
+        <i
+          style={{ margin: "0.5rem" }}
+          className="fas fa-search-dollar fa-lg"
+        ></i>
         HH-Finance
       </StyledHeader>
     </div>
