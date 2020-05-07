@@ -5,6 +5,11 @@ import { StyledMenu, StyledLink } from "../assets/StyledComponents/Menu";
 const LinkStyles = {
   color: "white",
   textDecoration: "none",
+  margin: "auto",
+};
+
+const vl = {
+  borderLeft: "0.2rem solid white",
 };
 
 function Menu(props) {
@@ -12,21 +17,23 @@ function Menu(props) {
     <StyledMenu>
       <StyledLink animated>
         <Link style={LinkStyles} to="/">
-          Introduction
+          Home
         </Link>
       </StyledLink>
-
+      <div style={vl}></div>
       <StyledLink animated>
         <Link style={LinkStyles} to="/investments">
-          My Investments
+          Our Investments
         </Link>
       </StyledLink>
+      <div style={vl}></div>
 
       <StyledLink animated>
         <Link style={LinkStyles} to="/FAQ">
           FAQ
         </Link>
       </StyledLink>
+      <div style={vl}></div>
 
       <StyledLink animated>
         <Link style={LinkStyles} to="/contact">

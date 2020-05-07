@@ -151,7 +151,7 @@ function ReturnsTable() {
   }
 
   return (
-    <div>
+    <div style={{ overflow: "auto" }}>
       <table className="investments-table">
         <thead>
           <tr>

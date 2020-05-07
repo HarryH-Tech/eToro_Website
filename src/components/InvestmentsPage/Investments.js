@@ -11,8 +11,10 @@ function Investments() {
         <p>
           Most of my investments, as you can see below, are in technology based
           companies as I believe these companies have the best potential for
-          large long term growth. Since I started investing on eToro about 3.5
-          years ago my portfolio has outperformed the S&P 500 every year.
+          large long term growth. I also invest in companies in other industries
+          if I think they have good growth potential and have good management.
+          Since I started investing on eToro about 3.5 years ago my portfolio
+          has outperformed the S&P 500 every year.
         </p>
 
         <br />
@@ -45,19 +47,23 @@ function Investments() {
         <br />
         <p>
           I try to invest in well run businesses and use fundamentals to value a
-          company rather than using technical analysis or looking at charts. I
-          invest for periods of at least 3 years as over a longer period a good
-          business will always significantly increase in value and investing
-          long term avoids being subject to unpredictable short term
-          fluctuations in price. I avoid buying stocks that see a large price
-          increase over a short period of time to avoid becoming a victim of
-          buying into a hyped up and overvalued stock and avoiding putting both
-          your, and my, money into riskier assets.
+          company rather than using technical analysis or looking at charts.
+          These fundamentals include looking at the mainly at the PE
+          (Price/Earnings), PEG ((Price/Earnings)/growth) and PB (Price/Book
+          Value) ratios as well as the revenue and customer growth rates, assets
+          and liabilities as well as various other factors . I invest for
+          periods of at least 3 years as over a longer period a good business
+          will always significantly increase in value and investing long term
+          avoids being subject to unpredictable short term fluctuations in
+          price. I avoid buying stocks that see a large price increase over a
+          short period of time to avoid becoming a victim of buying into a hyped
+          up and overvalued stock and avoiding putting both your, and my, money
+          into riskier assets.
         </p>
         <br />
         <p>
-          Below are my individual investment returns since the start of 2017,
-          when I began investing on eToro.
+          Below are mine and my copiers portfolio investment returns since the
+          start of 2017, when I began investing on eToro.
         </p>
       </StyledContainer>
       <ReturnsTable />

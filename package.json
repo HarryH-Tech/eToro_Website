@@ -1,5 +1,6 @@
 {
   "name": "websiteapp",
+  "homepage": "https://www.hh-finance.tech",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -8,6 +8,7 @@ import Investments from "./components/InvestmentsPage/Investments";
 import FAQ from "./components/FAQ";
 import Contact from "./components/ContactPage/ContactPage";
 import Footer from "./components/Footer";
+import PageNotFound from "./components/PageNotFound";
 
 //Import Base Styling
 import "./assets/styles.css";
@@ -19,6 +20,7 @@ const appContainer = {
   display: "flex",
   minHeight: "100vh",
   flexDirection: "column",
+  width: "100%",
 };
 
 function App() {
@@ -32,6 +34,7 @@ function App() {
           <Route path="/investments" component={Investments} exact />
           <Route path="/faq" component={FAQ} exact />
           <Route path="/contact" component={Contact} exact />
+          <Route path="*" component={PageNotFound} exact />
         </Switch>
       </Router>
 

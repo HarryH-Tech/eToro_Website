@@ -6,6 +6,6 @@ export const StyledContainer = styled.div`
   border-radius: 0.5rem;
   background-color: #fbfbfb;
   width: 90%;
-  margin: auto;
+  margin: 1rem auto 1rem auto;
   text-align: justify;
 `;
