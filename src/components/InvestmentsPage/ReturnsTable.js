@@ -41,9 +41,10 @@ function ReturnsTable() {
   async function fetchData() {
     let response = await axios
       .get(
-        `https://financialmodelingprep.com/api/v3/stock/real-time-price/AAPL,AMZN,BABA,BRK.B,TSLA,SHOP,SEDG,NEE,VOO,ITOT`
+        // "https://cors-anywhere.herokuapp.com/" +
+        `https://financialmodelingprep.com/api/v3/stock/real-time-price/AAPL,AMZN,BABA,BRK.B,TSLA,SHOP,SEDG,NEE,VOO,ITOT?apikey=${process.env.REACT_APP_API_KEY}`
       )
-      //      .then((response) => console.log(response.data.companiesPriceList))
+      //   .then((response) => console.log(response))
       .then((response) => setData(response.data.companiesPriceList));
   }
 
