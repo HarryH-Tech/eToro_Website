@@ -11,9 +11,7 @@ export const StyledForm = styled.div`
 `;
 
 export const StyledInput = styled.input`
-  border-radius: 0.2rem;
   padding: 0.2rem;
-  background-color: #f9f9f9;
   margin: auto auto 0.8rem 0.4rem;
   width: 50%;
   height: 1.4rem;
@@ -22,7 +20,6 @@ export const StyledInput = styled.input`
 export const StyledTextarea = styled.textarea`
   border-radius: 0.2rem;
   padding: 0.2rem;
-  background-color: #f9f9f9;
   margin: auto;
   font-family: arial;
 `;

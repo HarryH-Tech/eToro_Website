@@ -12,17 +12,33 @@ function ReturnsTable() {
 
   const { dateSort, buyingPrice, currentPrice, percentageReturn } = toggleSort;
   const [data, setData] = useState(null);
+
+  const companyNames = [
+    "Apple",
+    "Amazon",
+    "Alibaba",
+    "Berkshire Hathaway",
+    "Etsy",
+    "iShares S&P1500 ETF",
+    "Next Era Energy",
+    "Solar Edge",
+    "Shopify",
+    "Tesla",
+    "Vanguard S&P500 ETF",
+  ];
+
   const companyBuyPrices = [
-    184.9,
-    1783.12,
-    152.39,
-    198.53,
-    63.94,
-    142.05,
-    36.69,
-    86.82,
-    329.28,
-    269.26,
+    184.9, //AAPL
+    1783.12, //AMZN
+    152.39, //BABA
+    198.53, //BRK.B
+    98.97, //ETSY
+    63.94, //ITOT
+    142.05, //NEE
+    36.69, //SEDG
+    86.82, //SHOP
+    307.47, //TSLA
+    269.26, //VOO
   ];
 
   const investmentDates = [
@@ -30,6 +46,7 @@ function ReturnsTable() {
     "15/10/2018",
     "26/07/2017",
     "04/06/2018",
+    "25/06/2020",
     "01/10/2018",
     "14/06/2017",
     "11/12/2017",
@@ -42,7 +59,7 @@ function ReturnsTable() {
     let response = await axios
       .get(
         // "https://cors-anywhere.herokuapp.com/" +
-        `https://financialmodelingprep.com/api/v3/stock/real-time-price/AAPL,AMZN,BABA,BRK.B,TSLA,SHOP,SEDG,NEE,VOO,ITOT?apikey=${process.env.REACT_APP_API_KEY}`
+        `https://financialmodelingprep.com/api/v3/stock/real-time-price/AAPL,AMZN,BABA,BRK.B,ETSY,TSLA,SHOP,SEDG,NEE,VOO,ITOT?apikey=${process.env.REACT_APP_API_KEY}`
       )
       //   .then((response) => console.log(response))
       .then((response) => setData(response.data.companiesPriceList));
@@ -156,7 +173,7 @@ function ReturnsTable() {
       <table className="investments-table">
         <thead>
           <tr>
-            <th>Ticker</th>
+            <th>Name (Ticker)</th>
             <th>
               <i
                 className={`fas fa-arrow-alt-circle-down rotate ${
@@ -166,6 +183,7 @@ function ReturnsTable() {
                   dateSort ? sortTable("up", 2) : sortTable("down", 2);
                 }}
               ></i>{" "}
+              <br />
               Date of Initial Investment
             </th>
             <th>
@@ -177,6 +195,7 @@ function ReturnsTable() {
                   buyingPrice ? sortTable("up", 3) : sortTable("down", 3);
                 }}
               ></i>{" "}
+              <br />
               Price Bought ($)
             </th>
             <th>
@@ -188,6 +207,7 @@ function ReturnsTable() {
                   currentPrice ? sortTable("up", 4) : sortTable("down", 4);
                 }}
               ></i>{" "}
+              <br />
               Current Price ($)
             </th>
             <th>
@@ -199,6 +219,7 @@ function ReturnsTable() {
                   percentageReturn ? sortTable("up", 5) : sortTable("down", 5);
                 }}
               ></i>{" "}
+              <br />
               Percentage Return
             </th>
           </tr>
@@ -219,7 +240,9 @@ function ReturnsTable() {
                       : "red"
                   }
                 >
-                  <td>{company.symbol}</td>
+                  <td>
+                    {companyNames[index]} ({company.symbol})
+                  </td>
                   <td>{investmentDates[index]}</td>
                   <td>{companyBuyPrices[index]}</td>
                   <td>{company.price} </td>

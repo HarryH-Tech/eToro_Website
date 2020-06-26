@@ -58,7 +58,9 @@ export default class MyForm extends React.Component {
               Have a great day! 😊
             </StyledThanks>
           ) : (
-            <StyledButton animated>Submit</StyledButton>
+            <StyledButton animated>
+              <i className="fa fa-envelope" aria-hidden="true"></i> Send Message
+            </StyledButton>
           )}
           {status === "ERROR" && (
             <p>

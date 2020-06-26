@@ -12,6 +12,7 @@ body {
   width: 70%;
   margin-bottom: 2.5rem;
   overflow: scroll;
+  text-align: center;
 }
 
 .investments-table,
@@ -61,10 +62,3 @@ tr:hover {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-
-/******MEDIA QUERIES*******/
-/* @media only screen and (min-width: 410px) {
-  .investments-table {
-    width: 20% !important;
-  }
-} */
