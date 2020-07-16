@@ -1,4 +1,5 @@
 import React from "react";
+import { StyledTextContainer } from "../assets/styles/Constants";
 import Faq from "react-faq-component";
 
 const data = {
@@ -6,16 +7,16 @@ const data = {
     {
       title: "Why has your risk score gone up suddenly?",
       content: `My risk score goes up quickly during crises due to me being long 
-            stocks and never shorting any assets which would obviously make money during crisis. 
-            Over long periods, my risk score tends to revert to a level around 3-5 and stocks 
-            tend to rise.`,
+            stocks and never shorting anything which would obviously make money during a crisis. 
+            Over long periods, stocks 
+            tend to rise and my risk score reverts to a level around 3-5.`,
     },
     {
       title: "Do you invest in anything other than stocks on eToro?",
-      content: `On eToro I only invest in stocks and ETFs. Outside of eToro I invest in gold and cryptocurrencies, although a
-        much smaller amount than that which I have invested in stocks. This is
-        just to spread my risk a bit and learn more about trading other
-        assets.`,
+      content: `On eToro I only invest in stocks and ETFs (Exchange Traded Funds, to learn more about them click
+        <a href='https://www.investopedia.com/terms/e/etf.asp' target='_blank'> here</a>). Outside of eToro I invest 
+      in gold and cryptocurrencies, although a
+        much smaller amount than that which I have invested in stocks.`,
     },
     {
       title: "How long should I copy you for?",
@@ -33,30 +34,28 @@ const data = {
     {
       title:
         "Where do you read about the markets and learn more about investing?",
-      content: `I mainly read The Economist and the Investors Chronicle to keep up to date
-      with whats going on in the world and how its affecting the economy. I
-      also enjoy reading books about technology, economics, history and
-      science which also helps me when investing.`,
+      content: `I read various news/finance magazines (such as The Economist and The Investors Chronicle) and 
+      also enjoy reading books and listening to podcasts about technology, 
+      economics, history and science which all helps me when investing.`,
     },
     {
       title:
         "Why do you not invest in as many companies as other people on eToro?",
       content: `I try to invest only in well run businesses and those that I feel have
-      a high chance of growing over the next 5 years. For this reason I
-      don't invest in many businesses that I read about, usually because I
+      a high chance of growing over the next 5-10 years. For this reason I
+      don't invest in many of the businesses that I read about, usually because I
       feel they're overvalued.`,
     },
     {
       title:
         "What should I set my Stop Loss (SL) and Take Profit (TP) at when copying you?",
-      content: `Personally I very rarely set a SL or TP when I'm investing in a
-      business. I think if you're planning on investing for long time
-      horizons then market fluctuations are certain to happen and if you're
+      content: `Personally I never set a SL or TP. I think if you're planning on investing for the long term
+       then market fluctuations are certain to happen and if you're
       investing in a good business then they're nothing to worry about.
       Since I try to invest only in well run businesses I recommend anyone
       copying me to not set a SL or TP and just remain invested for the long
       term. It is a question I get asked a lot however and if you absolutely
-      feel you must set one or the other then I think setting either at 50%
+      feel you must set one or the other then I think setting them at 50%
       seems reasonable.`,
     },
   ],
@@ -64,6 +63,8 @@ const data = {
 
 const faqStyles = {
   rowTitleColor: "blue",
+  rowContentPaddingLeft: "1rem",
+  rowContentPaddingRight: "500px",
 };
 
 const faqConfig = {
@@ -72,11 +73,30 @@ const faqConfig = {
 
 function FAQ() {
   return (
-    <>
-      <div style={{ padding: "0.8rem" }}>
-        <Faq data={data} styles={faqStyles} config={faqConfig} />
+    <div>
+      <hr style={{ padding: "0", margin: "0" }} />
+      <div
+        id="faq"
+        style={{
+          textAlign: "justify",
+          width: "95%",
+          margin: "auto",
+          padding: "1rem",
+        }}
+      >
+        <div style={{ textAlign: "center" }}>
+          <h1>FAQ</h1>
+        </div>
+        <StyledTextContainer
+          border={"2px solid #dfdfdf"}
+          borderRadius={"0.6rem"}
+          padding={"0 0.6rem"}
+          backgroundColor={"#fff"}
+        >
+          <Faq data={data} styles={faqStyles} config={faqConfig} />
+        </StyledTextContainer>
       </div>
-    </>
+    </div>
   );
 }
 

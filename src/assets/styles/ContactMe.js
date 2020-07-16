@@ -5,23 +5,34 @@ export const StyledForm = styled.div`
   width: 80%;
   text-align: center;
   padding: 1rem;
-  border: 0.1rem solid #eee;
   border-radius: 0.5rem;
-  background-color: #fbfbfb;
 `;
 
 export const StyledInput = styled.input`
-  padding: 0.2rem;
+  padding: 0.4rem;
   margin: auto auto 0.8rem 0.4rem;
   width: 50%;
   height: 1.4rem;
+  border-radius: 0.6rem;
+  border: 1px solid #eee;
+  transition: 0.3s border-color;
+
+  &:hover {
+    border: 1px solid #aaa;
+  }
 `;
 
 export const StyledTextarea = styled.textarea`
-  border-radius: 0.2rem;
-  padding: 0.2rem;
+  border-radius: 0.6rem;
+  padding: 0.4rem;
   margin: auto;
   font-family: arial;
+  border: 1px solid #eee;
+  transition: 0.3s border-color;
+
+  &:hover {
+    border: 1px solid #aaa;
+  }
 `;
 
 export const StyledThanks = styled.div`
@@ -35,13 +46,14 @@ export const StyledThanks = styled.div`
 `;
 
 export const StyledButton = styled.button`
-  border: 0.1rem solid #2255dd;
+  border: 0.1rem solid #4477ff;
   border-radius: 0.2rem;
   padding: 0.2rem;
   background-color: #4477ff;
   color: white;
   padding: 0.5rem;
   cursor: pointer;
+  transition: 0.3s box-shadow;
 
   :hover {
     background-color: #3366ee;
@@ -54,7 +66,11 @@ export const StyledButton = styled.button`
       &:active {
         transform: translate(0%, 10%);
         transition: 0.1s ease-out;
-        text-decoration: underline;
       }
     `}
+`;
+
+export const StyledFooter = styled.div`
+  background-image: linear-gradient(to bottom, #aaddff, #4477ff);
+  height: 15vh;
 `;
