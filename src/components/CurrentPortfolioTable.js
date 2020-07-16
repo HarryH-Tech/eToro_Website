@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../../assets/styles.css";
+import { StyledPortfolioReturnsTable } from "../assets/styles/InvestmentStrategy";
+import "../assets/base.css";
 
 function ReturnsTable() {
   const [toggleSort, setToggleSort] = useState({
@@ -58,7 +59,6 @@ function ReturnsTable() {
   async function fetchData() {
     let response = await axios
       .get(
-        // "https://cors-anywhere.herokuapp.com/" +
         `https://financialmodelingprep.com/api/v3/stock/real-time-price/AAPL,AMZN,BABA,BRK.B,ETSY,TSLA,SHOP,SEDG,NEE,VOO,ITOT?apikey=${process.env.REACT_APP_API_KEY}`
       )
       //   .then((response) => console.log(response))
@@ -136,7 +136,7 @@ function ReturnsTable() {
     //  ignore the heading row:
     rows = rows.slice(1);
 
-    // set up the queryselector for getting the indicated
+    // set up the query selector for getting the indicated
     // column from a row, so we can compare using its value:
     let qs = `td:nth-child(${column})`;
 
@@ -170,10 +170,13 @@ function ReturnsTable() {
 
   return (
     <div style={{ overflow: "auto" }}>
-      <table className="investments-table">
+      <StyledPortfolioReturnsTable className="investments-table">
+        <caption style={{ color: "black" }}>
+          <h3>Current Returns of the Portfolio</h3>
+        </caption>
         <thead>
-          <tr>
-            <th>Name (Ticker)</th>
+          <tr style={{ backgroundColor: "#fff" }}>
+            <th>Company Name (Ticker)</th>
             <th>
               <i
                 className={`fas fa-arrow-alt-circle-down rotate ${
@@ -258,7 +261,7 @@ function ReturnsTable() {
               );
             })}
         </tbody>
-      </table>
+      </StyledPortfolioReturnsTable>
     </div>
   );
 }
