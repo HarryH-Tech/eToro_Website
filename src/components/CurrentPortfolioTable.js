@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../../assets/styles.css";
+import { StyledPortfolioReturnsTable } from "../assets/styles/InvestmentStrategy";
+import "../assets/base.css";
 
 function ReturnsTable() {
   const [toggleSort, setToggleSort] = useState({
@@ -24,6 +25,7 @@ function ReturnsTable() {
     "Solar Edge",
     "Shopify",
     "Tesla",
+    "The Trade Desk",
     "Vanguard S&P500 ETF",
   ];
 
@@ -32,12 +34,13 @@ function ReturnsTable() {
     1783.12, //AMZN
     152.39, //BABA
     198.53, //BRK.B
-    98.97, //ETSY
+    103.06, //ETSY
     63.94, //ITOT
     142.05, //NEE
     36.69, //SEDG
     86.82, //SHOP
-    307.47, //TSLA
+    269.26, //TSLA
+    461.0, //TTD
     269.26, //VOO
   ];
 
@@ -52,16 +55,16 @@ function ReturnsTable() {
     "11/12/2017",
     "14/06/2017",
     "28/03/2018",
+    "21/07/2020",
     "30/08/2019",
   ];
 
   async function fetchData() {
     let response = await axios
       .get(
-        // "https://cors-anywhere.herokuapp.com/" +
-        `https://financialmodelingprep.com/api/v3/stock/real-time-price/AAPL,AMZN,BABA,BRK.B,ETSY,TSLA,SHOP,SEDG,NEE,VOO,ITOT?apikey=${process.env.REACT_APP_API_KEY}`
+        `https://financialmodelingprep.com/api/v3/stock/real-time-price/AAPL,AMZN,BABA,BRK.B,ETSY,TSLA,TTD,SHOP,SEDG,NEE,VOO,ITOT?apikey=${process.env.REACT_APP_API_KEY}`
       )
-      //   .then((response) => console.log(response))
+      //  .then((response) => console.log(response));
       .then((response) => setData(response.data.companiesPriceList));
   }
 
@@ -136,7 +139,7 @@ function ReturnsTable() {
     //  ignore the heading row:
     rows = rows.slice(1);
 
-    // set up the queryselector for getting the indicated
+    // set up the query selector for getting the indicated
     // column from a row, so we can compare using its value:
     let qs = `td:nth-child(${column})`;
 
@@ -170,10 +173,13 @@ function ReturnsTable() {
 
   return (
     <div style={{ overflow: "auto" }}>
-      <table className="investments-table">
+      <StyledPortfolioReturnsTable className="investments-table">
+        <caption style={{ color: "black" }}>
+          <h3>Current Returns of the Portfolio</h3>
+        </caption>
         <thead>
-          <tr>
-            <th>Name (Ticker)</th>
+          <tr style={{ backgroundColor: "#fff" }}>
+            <th>Company Name (Ticker)</th>
             <th>
               <i
                 className={`fas fa-arrow-alt-circle-down rotate ${
@@ -258,7 +264,7 @@ function ReturnsTable() {
               );
             })}
         </tbody>
-      </table>
+      </StyledPortfolioReturnsTable>
     </div>
   );
 }
