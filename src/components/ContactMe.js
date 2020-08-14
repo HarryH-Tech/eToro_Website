@@ -7,6 +7,7 @@ import {
   StyledButton,
   StyledThanks,
   StyledFooter,
+  StyledLabel,
 } from "../assets/styles/ContactMe";
 
 const textareaStyles = {
@@ -38,71 +39,82 @@ export default class MyForm extends React.Component {
       : "fa fa-envelope";
 
     const { status } = this.state;
+
     return (
-      <div style={{ backgroundColor: "#ededed" }}>
-        <div style={{ textAlign: "center" }}>
-          <h1>Contact Me</h1>
-        </div>
-        <StyledForm id="contact_me">
-          <form
-            onSubmit={this.submitForm}
-            action="https://formspree.io/moqkabwn"
-            method="POST"
-          >
-            <label htmlFor="name">Name:</label>
+      <>
+        <br />
+        <hr style={{ padding: "0", margin: "0" }} />
 
-            <StyledInput required placeholder="Name" type="text" name="name" />
-            <br />
+        <div style={{ backgroundColor: "#ededed" }}>
+          <div style={{ textAlign: "center" }}>
+            <h1>Contact Me</h1>
+          </div>
+          <StyledForm id="contact_me">
+            <form
+              onSubmit={this.submitForm}
+              action="https://formspree.io/moqkabwn"
+              method="POST"
+            >
+              <StyledLabel htmlFor="name">Name:</StyledLabel>
 
-            <label htmlFor="email">Email:</label>
-            <StyledInput
-              required
-              placeholder="Email"
-              type="email"
-              name="email"
-            />
-            <br />
-            <label>Message:</label>
-            <br />
-
-            <div style={textareaStyles}>
-              <StyledTextarea
+              <StyledInput
                 required
-                rows="8"
-                style={textareaStyles}
+                placeholder="Name"
                 type="text"
-                name="message"
-                placeholder="Your Message..."
-              ></StyledTextarea>
-            </div>
-            <br />
-            {status === "SUCCESS" ? (
-              <StyledThanks>
-                <strong>Thanks for your question.</strong> <br />
-                I'll get back to you as soon as I can.
-                <br />
-                Have a great day! 😊
-              </StyledThanks>
-            ) : (
-              <StyledButton
-                animated
-                onMouseEnter={this.handleHover}
-                onMouseLeave={this.handleHover}
-              >
-                <i className={btnClass} aria-hidden="true"></i> Send Message
-              </StyledButton>
-            )}
-            {status === "ERROR" && (
-              <p>
-                Ooops! There was an error. Please ensure your email is correct
-                and try again in a few minutes.
-              </p>
-            )}
-          </form>
-        </StyledForm>
+                name="name"
+              />
+              <br />
 
-        <StyledFooter />
-      </div>
+              <StyledLabel htmlFor="email">Email:</StyledLabel>
+              <StyledInput
+                required
+                placeholder="Email"
+                type="email"
+                name="email"
+              />
+              <br />
+              <StyledLabel>Message</StyledLabel>
+              <br />
+
+              <div style={textareaStyles}>
+                <StyledTextarea
+                  required
+                  rows="8"
+                  style={textareaStyles}
+                  type="text"
+                  name="message"
+                  placeholder="Your Message..."
+                ></StyledTextarea>
+              </div>
+              <br />
+              {status === "SUCCESS" ? (
+                <StyledThanks>
+                  <strong>Thanks for your question.</strong> <br />
+                  I'll get back to you as soon as I can.
+                  <br />
+                  Have a great day! 😊
+                </StyledThanks>
+              ) : (
+                <StyledButton
+                  animated
+                  onMouseEnter={this.handleHover}
+                  onMouseLeave={this.handleHover}
+                >
+                  <i className={btnClass} aria-hidden="true"></i> Send Message
+                </StyledButton>
+              )}
+              {status === "ERROR" && (
+                <p>
+                  Ooops! There was an error. Please ensure your email is correct
+                  and try again in a few minutes.
+                </p>
+              )}
+            </form>
+          </StyledForm>
+
+          <StyledFooter />
+        </div>
+      </>
     );
   }
 

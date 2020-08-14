@@ -2,7 +2,7 @@ import React from "react";
 import ReactTooltip from "react-tooltip";
 
 import {
-  StyledBackgroundImg,
+  StyledBackground,
   StyledGrid,
   StyledTooltip,
 } from "../assets/styles/Constants";
@@ -12,38 +12,28 @@ import CurrentPortfolioTable from "./CurrentPortfolioTable";
 
 function InvestmentStrategy(props) {
   return (
-    <StyledBackgroundImg
+    <StyledBackground
       style={{ backgroundColor: "#ededed" }}
       id="investment_strategy"
-      height={"100%"}
     >
       <StyledGrid>
         <StyledTextContainer
           border={"2px solid #dfdfdf"}
           width={"80%"}
           borderRadius={"0.6rem"}
-          margin={"4rem auto 4rem auto"}
+          margin={"auto"}
           textAlign="justify"
           padding={"0.6rem"}
           backgroundColor={"#fff"}
-          height={"80%"}
         >
           <div style={{ textAlign: "center" }}>
             <h1>Investment Strategy</h1>
           </div>
           <p>
-            Most of the investments, are in technology companies as I believe
+            Most of my investments, are in technology companies as I believe
             they have the best long term growth potential. I also invest in
             companies in other industries if I think they have good growth
-            potential and good management. Since I started investing on eToro
-            about 4 years ago my portfolio has outperformed the{" "}
-            <StyledTooltip
-              data-multiline={true}
-              data-tip="A stock market index that <br /> measures  the  performance of 500 <br />large companies listed on stock <br />exchanges in the United States."
-            >
-              S&P 500
-            </StyledTooltip>{" "}
-            every year.
+            potential and good management.
           </p>
           <ReactTooltip />
 
@@ -98,7 +88,7 @@ function InvestmentStrategy(props) {
 
         <CurrentPortfolioTable />
       </StyledGrid>
-    </StyledBackgroundImg>
+    </StyledBackground>
   );
 }
 

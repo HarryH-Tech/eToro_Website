@@ -4,7 +4,7 @@ export const StyledYearlyReturnsTable = styled.table`
   border: 1px solid #ddd;
   border-collapse: collapse;
   padding: 0.4rem;
-  margin: 0.5rem auto;
+  margin: auto;
   width: 90%;
   text-align: center;
 
@@ -23,13 +23,19 @@ export const StyledYearlyReturnsTable = styled.table`
 
 export const StyledPortfolioReturnsTable = styled.table`
   border: 1px solid #ddd;
-  border-radius: 5rem;
   border-collapse: collapse;
   padding: 0.4rem;
-  margin: 0.5rem auto;
+  margin: auto auto 0.9rem auto;
   width: 80%;
   text-align: center;
-  height: 80%;
+  height: 70%;
+  transition: 0.2s ease-in;
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 13px 5px rgba(68, 119, 255, 1);
+    -moz-box-shadow: 0px 0px 13px 5px rgba(68, 119, 255, 1);
+    box-shadow: 0px 0px 13px 5px rgba(68, 119, 255, 1);
+  }
 
   th,
   td {

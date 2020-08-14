@@ -35,9 +35,7 @@ function Header() {
             style={{ fontSize: "2.5rem", margin: "0.8rem", display: "inline" }}
             className="fas fa-search-dollar fa-lg"
           ></i>
-          <h1
-            style={{ fontSize: "2.5rem", display: "inline", margin: "0.8rem" }}
-          >
+          <h1 style={{ fontSize: "2rem", display: "inline", margin: "0.8rem" }}>
             HH-Finance
           </h1>
         </div>

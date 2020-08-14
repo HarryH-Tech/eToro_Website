@@ -8,6 +8,10 @@ export const StyledForm = styled.div`
   border-radius: 0.5rem;
 `;
 
+export const StyledLabel = styled.label`
+  font-weight: bold;
+`;
+
 export const StyledInput = styled.input`
   padding: 0.4rem;
   margin: auto auto 0.8rem 0.4rem;
@@ -18,7 +22,7 @@ export const StyledInput = styled.input`
   transition: 0.3s border-color;
 
   &:hover {
-    border: 1px solid #aaa;
+    border: 2px solid #000;
   }
 `;
 
@@ -31,7 +35,7 @@ export const StyledTextarea = styled.textarea`
   transition: 0.3s border-color;
 
   &:hover {
-    border: 1px solid #aaa;
+    border: 2px solid #000;
   }
 `;
 

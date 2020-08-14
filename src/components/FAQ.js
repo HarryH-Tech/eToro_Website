@@ -13,10 +13,9 @@ const data = {
     },
     {
       title: "Do you invest in anything other than stocks on eToro?",
-      content: `On eToro I only invest in stocks and ETFs (Exchange Traded Funds, to learn more about them click
-        <a href='https://www.investopedia.com/terms/e/etf.asp' target='_blank'> here</a>). Outside of eToro I invest 
+      content: `On eToro I only invest in stocks and ETFs. Outside of eToro I invest 
       in gold and cryptocurrencies, although a
-        much smaller amount than that which I have invested in stocks.`,
+      much smaller amount than that which I have invested in stocks.`,
     },
     {
       title: "How long should I copy you for?",
@@ -27,9 +26,7 @@ const data = {
     },
     {
       title: "How much should I copy you with?",
-      content: `I recommend copying me with a $1000 to start with. If
-      you feel comfortable with my investment style and decisions after a few months then I recommend adding more to get the 
-      maximum benefit.`,
+      content: `The minimum amount you copy  me with should be $1000. I recommended copying me with $2000 though to cover all open trades and maximize the return on your investment.`,
     },
     {
       title:
@@ -43,8 +40,14 @@ const data = {
         "Why do you not invest in as many companies as other people on eToro?",
       content: `I try to invest only in well run businesses and those that I feel have
       a high chance of growing over the next 5-10 years. For this reason I
-      don't invest in many of the businesses that I read about, usually because I
-      feel they're overvalued.`,
+      don't invest in many of the businesses that I read about.`,
+    },
+    {
+      title:
+        "Is now a good time to copy you? / When is a good time to copy you?",
+      content: `There is never specifically a good time to copy me. If you're copying me long term 
+      which I do recommend then it doesn't really matter when you decide to copy me as over a longer 
+      period, the value of the businesses we invest in will grow regardless of when we invested in them.`,
     },
     {
       title:
@@ -63,8 +66,6 @@ const data = {
 
 const faqStyles = {
   rowTitleColor: "blue",
-  rowContentPaddingLeft: "1rem",
-  rowContentPaddingRight: "500px",
 };
 
 const faqConfig = {
@@ -81,7 +82,6 @@ function FAQ() {
           textAlign: "justify",
           width: "95%",
           margin: "auto",
-          padding: "1rem",
         }}
       >
         <div style={{ textAlign: "center" }}>
