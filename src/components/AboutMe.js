@@ -42,6 +42,13 @@ function AboutMe(props) {
               S&P 500
             </StyledTooltip>{" "}
             every year.
+            <br />
+            <br />
+            If you wish to copy me on eToro you can dog{" "}
+            <a href="https://www.etoro.com/people/harryh1993" target="_blank">
+              here
+            </a>{" "}
+            (login/signup required).
           </p>
         </StyledTextContainer>
       </StyledBackground>

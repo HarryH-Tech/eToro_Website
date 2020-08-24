@@ -21,7 +21,11 @@ function ReturnsTable() {
     "Berkshire Hathaway",
     "Etsy",
     "iShares S&P1500 ETF",
+    "Lemonade",
     "Next Era Energy",
+    "Niu",
+    "Palo Alto Networks",
+    "Sea Ltd",
     "Solar Edge",
     "Shopify",
     "Tesla",
@@ -30,39 +34,49 @@ function ReturnsTable() {
   ];
 
   const companyBuyPrices = [
-    184.9, //AAPL
-    1783.12, //AMZN
+    317.61, //AAPL
+    1774.28, //AMZN
     152.39, //BABA
-    198.53, //BRK.B
+    200.72, //BRK.B
     103.06, //ETSY
-    63.94, //ITOT
-    142.05, //NEE
-    36.69, //SEDG
-    86.82, //SHOP
-    269.26, //TSLA
+    66.49, //ITOT
+    60.65, //LMND
+    194.48, //NEE
+    19.84, //NIU
+    271.74, //PANW
+    147.31, //SE
+    85.43, //SEDG
+
+    270.53, //SHOP
+    505.5, //TSLA
     461.0, //TTD
-    269.26, //VOO
+    270.43, //VOO
   ];
 
   const investmentDates = [
-    "07/01/2019",
-    "15/10/2018",
-    "26/07/2017",
-    "04/06/2018",
-    "25/06/2020",
-    "01/10/2018",
-    "14/06/2017",
-    "11/12/2017",
-    "14/06/2017",
-    "28/03/2018",
-    "21/07/2020",
-    "30/08/2019",
+    "07/01/2019", //AAPL
+    "15/10/2018", //AMZN
+    "26/07/2017", //BABA
+    "04/06/2018", //BRK.B
+    "25/06/2020", //ETSY
+    "01/10/2018", //ITOT
+    "2008/2020", //LMND
+    "14/06/2017", //NEE
+    "20/08/2020", //NIU
+    "20/08/2020", //PANW
+    "17/08/2020", //SE
+    "11/12/2017", //SEDG
+
+    "14/06/2017", //SHOP
+    "30/04/2019", //TSLA
+    "21/07/2020", //TTD
+    "30/08/2019", //VOO
   ];
 
   async function fetchData() {
     let response = await axios
       .get(
-        `https://financialmodelingprep.com/api/v3/stock/real-time-price/AAPL,AMZN,BABA,BRK.B,ETSY,TSLA,TTD,SHOP,SEDG,NEE,VOO,ITOT?apikey=${process.env.REACT_APP_API_KEY}`
+        `https://financialmodelingprep.com/api/v3/stock/real-time-price/AAPL,AMZN,BABA,BRK.B,ETSY,ITOT,LMND,NEE,NIU,PANW,SE,SEDG,SHOP,TSLA,TTD,VOO?apikey=${process.env.REACT_APP_API_KEY}`
       )
       //  .then((response) => console.log(response));
       .then((response) => setData(response.data.companiesPriceList));

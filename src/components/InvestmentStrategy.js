@@ -21,7 +21,7 @@ function InvestmentStrategy(props) {
           border={"2px solid #dfdfdf"}
           width={"80%"}
           borderRadius={"0.6rem"}
-          margin={"auto"}
+          margin={"3.4rem auto auto auto"}
           textAlign="justify"
           padding={"0.6rem"}
           backgroundColor={"#fff"}
