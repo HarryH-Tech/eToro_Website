@@ -15,7 +15,7 @@ const data = {
       title: "Do you invest in anything other than stocks on eToro?",
       content: `On eToro I only invest in stocks and ETFs. Outside of eToro I invest 
       in gold and cryptocurrencies, although a
-      much smaller amount than that which I have invested in stocks.`,
+      much smaller amount than that which I have invested on eToro.`,
     },
     {
       title: "How long should I copy you for?",

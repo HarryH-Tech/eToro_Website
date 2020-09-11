@@ -34,7 +34,7 @@ function ReturnsTable() {
   ];
 
   const companyBuyPrices = [
-    317.61, //AAPL
+    79.74, //AAPL
     1774.28, //AMZN
     152.39, //BABA
     200.72, //BRK.B
@@ -46,9 +46,8 @@ function ReturnsTable() {
     271.74, //PANW
     147.31, //SE
     85.43, //SEDG
-
     270.53, //SHOP
-    505.5, //TSLA
+    98.58, //TSLA
     461.0, //TTD
     270.43, //VOO
   ];
@@ -66,7 +65,6 @@ function ReturnsTable() {
     "20/08/2020", //PANW
     "17/08/2020", //SE
     "11/12/2017", //SEDG
-
     "14/06/2017", //SHOP
     "30/04/2019", //TSLA
     "21/07/2020", //TTD

@@ -44,11 +44,11 @@ function AboutMe(props) {
             every year.
             <br />
             <br />
-            If you wish to copy me on eToro you can dog{" "}
+            If you wish to copy me on eToro you can do so{" "}
             <a href="https://www.etoro.com/people/harryh1993" target="_blank">
               here
             </a>{" "}
-            (login/signup required).
+            (signup/login required).
           </p>
         </StyledTextContainer>
       </StyledBackground>
