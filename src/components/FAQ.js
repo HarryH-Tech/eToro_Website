@@ -5,13 +5,6 @@ import Faq from "react-faq-component";
 const data = {
   rows: [
     {
-      title: "Why has your risk score gone up suddenly?",
-      content: `My risk score goes up quickly during crises due to me being long 
-            stocks and never shorting anything which would obviously make money during a crisis. 
-            Over long periods, stocks 
-            tend to rise and my risk score reverts to a level around 3-5.`,
-    },
-    {
       title: "Do you invest in anything other than stocks on eToro?",
       content: `On eToro I only invest in stocks and ETFs. Outside of eToro I invest 
       in gold and cryptocurrencies, although a
@@ -22,18 +15,18 @@ const data = {
       content: `I recommend copying me for at least 2 years. My investment strategy doesn't guarantee short term returns
       so long term copying is recommended. To read more about the benefits of long term investing over short term 
       you can read more <a href='https://www.cnbc.com/2018/04/06/warren-buffett-and-ray-dalio-agree-on-what-to-do-when-the-market-tanks.html?__source=facebook%7Cmain' target='_blank'>
-      here</a> and (from another popular investor on eToro) <a href='https://www.ishfaaqpeerally.com/post/2019/07/10/long-term-copy-vs-short-term-copy' target='_blank'>here</a>.`,
+      here</a>.`,
     },
     {
       title: "How much should I copy you with?",
-      content: `The minimum amount you copy  me with should be $1000. I recommended copying me with $2000 though to cover all open trades and maximize the return on your investment.`,
+      content: `You can copy me with any amount as even the minimum of $200 will be enough to cover all open trades. Obviously copying with more though will result in  higher returns over time.`,
     },
     {
       title:
         "Where do you read about the markets and learn more about investing?",
       content: `I read various news/finance magazines (such as The Economist and The Investors Chronicle) and 
       also enjoy reading books and listening to podcasts about technology, 
-      economics, history and science which all helps me when investing.`,
+      economics, history and science.`,
     },
     {
       title:

@@ -31,24 +31,37 @@ function AboutMe(props) {
             company. I never set a take profit or stop loss as these don't suit
             investors aiming at long term growth.
             <br />
-            <br />I can't lie, I have no academic experience in investing or
-            finance. I've learnt about them both through reading, talking to
-            people and following the market. Since I started investing on eToro
-            in 2017, I've outperformed the{" "}
+            <br />
+            I've learnt about investing both through reading, talking to people
+            and following the market. Since I started investing on eToro in 2017
+            I've outperformed the{" "}
             <StyledTooltip
               data-multiline={true}
-              data-tip="A stock market index that <br /> measures  the  performance of 500 <br />large companies listed on stock <br />exchanges in the United States."
+              data-tip="A stock market index that <br /> measures  the  performance of 500 <br />large companies listed on stock <br />exchanges in the US."
             >
               S&P 500
             </StyledTooltip>{" "}
-            every year.
+            every year. To see a review of my profile and results on eToro click{" "}
+            <a
+              href="https://www.youtube.com/watch?v=eisfKNRVx74&t=92s"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              here
+            </a>
+            .
             <br />
             <br />
             If you wish to copy me on eToro you can do so{" "}
-            <a href="https://www.etoro.com/people/harryh1993" target="_blank">
+            <a
+              href="https://www.etoro.com/people/harryh1993"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               here
             </a>{" "}
-            (signup/login required).
+            (sign-up/login required).
+            <br />
           </p>
         </StyledTextContainer>
       </StyledBackground>

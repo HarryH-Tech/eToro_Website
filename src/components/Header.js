@@ -36,7 +36,7 @@ function Header() {
             className="fas fa-search-dollar fa-lg"
           ></i>
           <h1 style={{ fontSize: "2rem", display: "inline", margin: "0.8rem" }}>
-            HH-Finance
+            HarryH1993
           </h1>
         </div>
         {width < 820 && <Burger open={open} setOpen={setOpen} />}
