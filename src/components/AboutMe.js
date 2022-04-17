@@ -34,22 +34,7 @@ function AboutMe(props) {
             <br />
             I've learnt about investing both through reading, talking to people
             and following the market. Since I started investing on eToro in 2017
-            I've outperformed the{" "}
-            <StyledTooltip
-              data-multiline={true}
-              data-tip="A stock market index that <br /> measures  the  performance of 500 <br />large companies listed on stock <br />exchanges in the US."
-            >
-              S&P 500
-            </StyledTooltip>{" "}
-            every year. To see a review of my profile and results on eToro click{" "}
-            <a
-              href="https://www.youtube.com/watch?v=eisfKNRVx74&t=92s"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              here
-            </a>
-            .
+            my total returns are over 400%.
             <br />
             <br />
             If you wish to copy me on eToro you can do so{" "}
@@ -62,6 +47,20 @@ function AboutMe(props) {
             </a>{" "}
             (sign-up/login required).
             <br />
+            <h3 style={{textAlign: "center"}}>Reviews/Interviews</h3>
+            <a
+              href="https://www.youtube.com/watch?v=eisfKNRVx74&t=92s"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+               Profile/Portfolio Video Review By Felixfallax
+            </a> 
+            <br />  <br /> 
+            <a href="https://www.youtube.com/watch?v=ikrraQerYwk&t=57s&ab_channel=CopyTradingTV" target="_blank">  Profile/Portfolio Video Review By Copy Trading TV</a>
+            <br />  <br /> 
+             <a href="https://www.youtube.com/watch?v=7Uur7s01AmQ&t=444s&ab_channel=CopytradersClub" target="_blank">Podcast Interview With CopyTraders Club</a>
+             <br />  <br />
+           
           </p>
         </StyledTextContainer>
       </StyledBackground>

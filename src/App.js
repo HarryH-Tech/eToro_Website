@@ -1,6 +1,6 @@
 import React from "react";
 
-//import Custom Components
+//Import Custom Components
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import InvestmentStrategy from "./components/InvestmentStrategy";

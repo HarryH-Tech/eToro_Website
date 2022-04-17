@@ -19,7 +19,7 @@ const data = {
     },
     {
       title: "How much should I copy you with?",
-      content: `You can copy me with any amount as even the minimum of $200 will be enough to cover all open trades. Obviously copying with more though will result in  higher returns over time.`,
+      content: `You can copy me with any amount as even the minimum of $200 will be enough to cover all open trades.`,
     },
     {
       title:

@@ -9,13 +9,7 @@ export const StyledTextContainer = styled.div`
   padding: ${(props) => props.padding};
   background-color: ${(props) => props.backgroundColor};
   height: ${(props) => props.height};
-  transition: 0.2s ease-in;
 
-  &:hover {
-    -webkit-box-shadow: 0px 0px 13px 5px rgba(68, 119, 255, 1);
-    -moz-box-shadow: 0px 0px 13px 5px rgba(68, 119, 255, 1);
-    box-shadow: 0px 0px 13px 5px rgba(68, 119, 255, 1);
-  }
 `;
 
 export const StyledTooltip = styled.span`

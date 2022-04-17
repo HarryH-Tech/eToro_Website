@@ -12,7 +12,7 @@ import { StyledTextContainer } from "../assets/styles/Constants";
 function InvestmentStrategy(props) {
   return (
     <StyledBackground
-      style={{ backgroundColor: "#ededed" }}
+     
       id="investment_strategy"
     >
       <StyledTextContainer
@@ -45,6 +45,11 @@ function InvestmentStrategy(props) {
             </tr>
           </thead>
           <tbody>
+          <tr>
+              <td>2021</td>
+              <td>7.35%</td>
+              <td>28.71%</td>
+            </tr>
             <tr>
               <td>2020</td>
               <td>115.87%</td>
@@ -80,12 +85,13 @@ function InvestmentStrategy(props) {
           asset you can only gain 100% if the value drops to zero but you can
           lose an unlimited amount of money if the share price continues to
           rise. The only time I may short certain assets is during an extremely
-          bearish market to reduce the volatility of the portfolio.
+          bearish market to reduce the volatility of the portfolio which eToro 
+          uses to calculate the risk score.
           <br />
           <br />I invest in well run businesses and use fundamentals to value a
           company. These fundamentals include looking at financial ratios as
           well as the company revenue, customer growth rates and assets/
-          liabilities as well as various other factors. I aim to invest for
+          liabilities and other variables. I aim to invest for
           periods of at least 3 years as investing over a longer period avoids
           being subject to unpredictable short term fluctuations in the market.
         </p>

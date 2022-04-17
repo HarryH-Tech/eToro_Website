@@ -45,7 +45,7 @@ export default class MyForm extends React.Component {
         <br />
         <hr style={{ padding: "0", margin: "0" }} />
 
-        <div style={{ backgroundColor: "#ededed" }}>
+        <div>
           <div style={{ textAlign: "center" }}>
             <h1>Contact Me</h1>
           </div>
